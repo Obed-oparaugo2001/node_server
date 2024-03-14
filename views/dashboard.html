@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <h2>This is your dashboard</h2>
+     <h2 id="response"></h2>
+    <form  id="imgForm" method="POST" action="/dashboard">
+        <input type="file" name="img_file">
+        <input type="submit" value="post" />
+    </form>
+    <script>
+     const imgForm = document.querySelector("#imgForm");
+     imgForm.addEventListener('submit',(e)=> {
+        e.preventDefault();
+        console.log("default prevented");
+    });
+ 
+
+    </script>
+</body>
+</html>

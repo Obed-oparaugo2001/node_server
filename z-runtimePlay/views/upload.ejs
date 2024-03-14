@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><%= message%></h1>
+    <h2>This is your dashboard</h2>
+     <h2 id="response"></h2>
+     <img id="img" width="300" src="http://localhost:8000/image/1708960514913.PNG" height="300"/>
+    
+     <div id="scrn">
+
+     </div>
+
+    <form  id="imgForm" method="POST" enctype="multipart/form-data" action="/uploads">
+        <input type="file" name="img_file">
+        <input type="submit" value="post" />
+    </form>
+    <script>
+      /*  const imgForm = document.querySelector("#img");
+       const scrn = document.querySelector("#scrn");
+      fetch('image/1708960514913.PNG').then(data =>{ scrn.innerHTML = data;
+        console.log(data)}) 
+ */
+    </script>
+</body>
+</html>
